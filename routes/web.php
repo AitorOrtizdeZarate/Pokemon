@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'listarController@index');
+Route::get('/medallas', 'medallasController@index');
