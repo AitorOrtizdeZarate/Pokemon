@@ -18,7 +18,7 @@ class CreateEntrenadoresTable extends Migration
             $table->string('nombre');
             $table->string('apellido');
             $table->string('descripcion')->nullable();
-            $table->string('imagen');
+            $table->string('imagen')->nullable();
             $table->timestamps();
         });
     }

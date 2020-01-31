@@ -7,8 +7,14 @@
 <body>
 	
 	        <div class="content ">
-	            <div class="links bg-secondary text-white" >
+	            <div class="links bg-secondary text-white row justify-content-around" >
+	            	<div>
+	            		<a href="/"><img src="/imagenes/pokeball.png" id="logo"></a>
+	            	</div>
 	               <h1>Pokemon</h1>
+	               <div>
+	               	<a href="/"><img src="/imagenes/pokeball.png" id="logo"></a>
+	               </div>
 	            </div>
 	           <br><br>
 	            <div class="op">

@@ -33,7 +33,12 @@ class EntrenadoresSeeder extends Seeder
         $entrenadores = Entrenadore::create([
             'nombre' => 'Adrian',
             'apellido' => 'Rodriguez',
+            'descripcion' => 'Jasnas love',
             'imagen' => '/imagenes/Adrian2.jpg'
+        ]);
+        $entrenadores = Entrenadore::create([
+            'nombre' => 'David',
+            'apellido' => 'Belinchon'
         ]);
     }
 }

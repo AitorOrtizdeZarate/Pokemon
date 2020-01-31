@@ -66,5 +66,9 @@
                 height: 200px;
                 width: 200px;
             }
+            #logo{
+                height: 50px;
+                width: 50px;
+            }
         </style>
     </head>
