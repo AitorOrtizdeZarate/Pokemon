@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMedallasTable extends Migration
+class CreateTrainersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,13 @@ class CreateMedallasTable extends Migration
      */
     public function up()
     {
-        Schema::create('medallas', function (Blueprint $table) {
+        Schema::create('trainers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');
-            $table->string('tipo');
-            $table->string('lider');
-            $table->string('lugar');
+            $table->string('apellido');
+            $table->string('descripcion')->nullable();
             $table->string('imagen')->nullable();
             $table->timestamps();
-
-            
         });
     }
 
@@ -33,6 +30,6 @@ class CreateMedallasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('medallas');
+        Schema::dropIfExists('trainers');
     }
 }

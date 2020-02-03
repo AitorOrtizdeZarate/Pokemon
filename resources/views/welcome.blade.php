@@ -7,7 +7,7 @@
                 </div>
             <div class="card-deck">
                 @foreach ($entrenadores as $entrenador)
-                <div class="col-3" style="height: 550px;">
+                <div class="col-2" style="height: 550px;">
                     <div class="card">
                       <img class="card-img-top" src="{{$entrenador->imagen}}" alt="Card image cap" style="height: 300px;">
                       <div class="card-body">
