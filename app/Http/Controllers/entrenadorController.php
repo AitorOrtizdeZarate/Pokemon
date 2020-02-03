@@ -48,7 +48,7 @@ class entrenadorController extends Controller
     public function show($id)
     {
         $entrenadores = Entrenadore::find($id);
-        return view('entrenador', compact('id'));
+        return view('entrenador', compact('entrenadores'));
     }
 
     /**
