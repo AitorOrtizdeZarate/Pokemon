@@ -15,7 +15,7 @@ class entrenadorController extends Controller
     public function index()
     {
         $entrenadores = Entrenadore::all();
-        return view('entrenador', compact('entrenadores'));
+        return view('welcome', compact('entrenadores'));
     }
 
     /**
