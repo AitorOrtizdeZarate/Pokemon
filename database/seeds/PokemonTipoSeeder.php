@@ -101,5 +101,29 @@ class PokemonTipoSeeder extends Seeder
             'pokemon_id' => 11,
             'tipo_id' => 2
         ]);
+
+        //Piplup
+        $pokemonTipo = PokemonTipo::create([
+            'pokemon_id' => 12,
+            'tipo_id' => 1
+        ]);
+
+        //Serperior
+        $pokemonTipo = PokemonTipo::create([
+            'pokemon_id' => 13,
+            'tipo_id' => 2
+        ]);
+
+        //Pichu
+        $pokemonTipo = PokemonTipo::create([
+            'pokemon_id' => 14,
+            'tipo_id' => 17
+        ]);
+
+        //Xerneas
+        $pokemonTipo = PokemonTipo::create([
+            'pokemon_id' => 15,
+            'tipo_id' => 15
+        ]);
     }
 }

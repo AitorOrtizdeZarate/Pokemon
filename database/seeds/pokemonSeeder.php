@@ -67,5 +67,25 @@ class pokemonSeeder extends Seeder
             'imagen' => '/imagenes/pokemon/sceptile.png',
             'trainer_id' => 1
         ]);
+        $pokemon = Pokemon::create([
+            'nombre' => 'Piplup',
+            'imagen' => '/imagenes/pokemon/piplup.png',
+            'trainer_id' => 6
+        ]);
+         $pokemon = Pokemon::create([
+            'nombre' => 'Serperior',
+            'imagen' => '/imagenes/pokemon/serperior.png',
+            'trainer_id' => 6
+        ]);
+          $pokemon = Pokemon::create([
+            'nombre' => 'Pichu',
+            'imagen' => '/imagenes/pokemon/pichu.png',
+            'trainer_id' => 6
+        ]);
+           $pokemon = Pokemon::create([
+            'nombre' => 'Xerneas',
+            'imagen' => '/imagenes/pokemon/xerneas.png',
+            'trainer_id' => 6
+        ]);
     }
 }
