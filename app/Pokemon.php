@@ -12,4 +12,8 @@ class Pokemon extends Model
     public function entrenador(){
         return $this->belongsTo('App\Trainer');
     }
+
+    public function tipos(){
+    	return $this->belongsToMany('App\Tipo');
+    }
 }

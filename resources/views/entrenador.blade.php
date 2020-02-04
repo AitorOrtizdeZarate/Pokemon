@@ -51,7 +51,13 @@
                          <img class="card-img-top" src="{{$pokemon->imagen}}" alt="Card image cap" style="height: 150px;">
                          <div class="card-body">
                            <h5 class="card-title">{{$pokemon->nombre}}</h5>
+                           @foreach($pokemon->tipos as $tipo)
+                            <img src="{{$tipo->imagen}}">
+                           @endforeach
                          </div>
+                         
+                           
+                         
                           
                        </div>
                        </div>
