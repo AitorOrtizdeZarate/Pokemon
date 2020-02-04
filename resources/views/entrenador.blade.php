@@ -41,6 +41,24 @@
                 <hr size="30">
                 <h2>Pokemon</h2>
                 
+                <div class="d-flex justify-content-center align-items-center" style="height: 350px;">
+                  <div class="card-deck">
+ 
+                   @foreach($entrenadores->pokemon as $pokemon)
+                   <div class="col">
+                       <div class="card" style="height: 300px;">
+ 
+                         <img class="card-img-top" src="{{$pokemon->imagen}}" alt="Card image cap" style="height: 150px;">
+                         <div class="card-body">
+                           <h5 class="card-title">{{$pokemon->nombre}}</h5>
+                         </div>
+                          
+                       </div>
+                       </div>
+                       @endforeach
+                  
+                   </div>
+                   </div>
                
             </div>
        
