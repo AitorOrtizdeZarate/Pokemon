@@ -38,7 +38,7 @@ class pokemonSeeder extends Seeder
             'trainer_id' => 6
         ]);
         $pokemon = Pokemon::create([
-            'nombre' => 'Butterfly',
+            'nombre' => 'Butterfree',
             'imagen' => '/imagenes/pokemon/butterfly.png',
             'trainer_id' => 6
         ]);
@@ -56,6 +56,16 @@ class pokemonSeeder extends Seeder
             'nombre' => 'Charizard',
             'imagen' => '/imagenes/pokemon/charizard.png',
             'trainer_id' => 2
+        ]);
+        $pokemon = Pokemon::create([
+            'nombre' => 'Doublade',
+            'imagen' => '/imagenes/pokemon/doublade.png',
+            'trainer_id' => 5
+        ]);
+        $pokemon = Pokemon::create([
+            'nombre' => 'Sceptile',
+            'imagen' => '/imagenes/pokemon/sceptile.png',
+            'trainer_id' => 1
         ]);
     }
 }
