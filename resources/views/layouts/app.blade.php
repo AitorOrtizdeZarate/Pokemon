@@ -6,7 +6,7 @@
 
 <body>
 	
-	        <div class="content ">
+	        <div class="content col-12">
 	            <div class="links bg-secondary text-white row justify-content-around" >
 	            	<div>
 	            		<a href="/"><img src="/imagenes/pokeball.png" id="logo"></a>

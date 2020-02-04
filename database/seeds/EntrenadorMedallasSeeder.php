@@ -16,5 +16,33 @@ class EntrenadorMedallasSeeder extends Seeder
         	'trainer_id' => 1,
         	'medalla_id' => 1
         ]);
+        $entrenadorMedalla = MedallaTrainer::create([
+            'trainer_id' => 1,
+            'medalla_id' => 2
+        ]);
+         $entrenadorMedalla = MedallaTrainer::create([
+            'trainer_id' => 1,
+            'medalla_id' => 3
+        ]);
+          $entrenadorMedalla = MedallaTrainer::create([
+            'trainer_id' => 1,
+            'medalla_id' => 4
+        ]);
+           $entrenadorMedalla = MedallaTrainer::create([
+            'trainer_id' => 1,
+            'medalla_id' => 5
+        ]);
+            $entrenadorMedalla = MedallaTrainer::create([
+            'trainer_id' => 1,
+            'medalla_id' => 6
+        ]);
+             $entrenadorMedalla = MedallaTrainer::create([
+            'trainer_id' => 1,
+            'medalla_id' => 7
+        ]);
+              $entrenadorMedalla = MedallaTrainer::create([
+            'trainer_id' => 1,
+            'medalla_id' => 8
+        ]);
     }
 }
