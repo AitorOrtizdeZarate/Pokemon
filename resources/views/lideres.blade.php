@@ -20,17 +20,14 @@
 
                   @foreach($entrenadores->medalla as $medalla)
                   <div class="col">
-                      <div class="card" style="height: 300px;">
+                      <div class="card">
 
                         <img class="card-img-top" src="{{$medalla->imagen}}" alt="Card image cap" style="height: 150px;">
                         <div class="card-body">
                           <h5 class="card-title">{{$medalla->nombre}}</h5>
+                          
+                          
                         </div>
-                        <div class="card-footer">
-                          <form action="{{route('lider', $medalla->id)}}">
-                            <button type="submit" class="btn btn-primary">Lider</button> 
-                          </form>
-                        </div> 
                       </div>
                       </div>
                       @endforeach

@@ -51,7 +51,7 @@ class EntrenadoresSeeder extends Seeder
         $entrenadores = Trainer::create([
             'nombre' => 'Joseba',
             'apellido' => 'De la Puente',
-            'descripcion' => 'Un putoto nigi',
+            'descripcion' => 'Un putito nigi',
             'imagen' => '/imagenes/jox.png'
         ]);
         

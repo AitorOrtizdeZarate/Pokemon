@@ -14,3 +14,5 @@ Route::get('/', 'entrenadorController@index');
 
 Route::resource('entrenador', 'entrenadorController');
 Route::get('/medallas', 'medallasController@index');
+
+Route::get('/lider', 'liderController@index')->name('lider');
