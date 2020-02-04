@@ -5,38 +5,21 @@
             
                <div class="col-12">
                	<div>
-               		<h1>{{$entrenadores->nombre}} {{$entrenadores->apellido}}</h1>
+               		<h1>{{$medalla->lider->nombre}}</h1>
                	</div>
            		<div class="title m-b-md">
-                    <img src="{{$entrenadores->imagen}}" id="pokeball" class="rounded-circle">
+                    <img src="{{$medalla->lider->imagen}}" id="pokeball">
+                </div>
+                <div>
+                <h3>{{$medalla->lider->lugar}}</h3>
                 </div>
                </div>
 
-               <hr size="30">
-                <h2>Medallas</h2>
+               
 
-                 <div class="d-flex justify-content-center align-items-center" style="height: 350px;">
-                 <div class="card-deck">
-
-                  @foreach($entrenadores->medalla as $medalla)
-                  <div class="col">
-                      <div class="card">
-
-                        <img class="card-img-top" src="{{$medalla->imagen}}" alt="Card image cap" style="height: 150px;">
-                        <div class="card-body">
-                          <h5 class="card-title">{{$medalla->nombre}}</h5>
-                          
-                          
-                        </div>
-                      </div>
-                      </div>
-                      @endforeach
                  
-                  </div>
-                  </div>
 
-                <hr size="30">
-                <h2>Pokemon</h2>
+                
                 
                
             </div>
