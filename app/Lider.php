@@ -11,4 +11,8 @@ class Lider extends Model
     public function medalla(){
     	return $this->BelongsTo('App\Lider');
     }
+
+    public function pokemon(){
+    	return $this->hasOne('App\Pokemon');
+    }
 }

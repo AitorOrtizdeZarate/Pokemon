@@ -19,9 +19,11 @@ class CreatePokemonTable extends Migration
             $table->string('imagen');
             $table->timestamps();
 
-            $table->unsignedBigInteger('trainer_id');
-
+            $table->unsignedBigInteger('trainer_id')->nullable();
             $table->foreign('trainer_id')->references('id')->on('trainers');
+
+            $table->unsignedBigInteger('lider_id')->nullable();
+            $table->foreign('lider_id')->references('id')->on('lideres');
         });
     }
 

@@ -87,5 +87,10 @@ class pokemonSeeder extends Seeder
             'imagen' => '/imagenes/pokemon/xerneas.png',
             'trainer_id' => 6
         ]);
+        $pokemon = Pokemon::create([
+            'nombre' => 'Geodude',
+            'imagen' => '/imagenes/pokemon/geodude.png',
+            'lider_id' => 1
+        ]);
     }
 }

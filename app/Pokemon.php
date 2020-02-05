@@ -16,4 +16,8 @@ class Pokemon extends Model
     public function tipos(){
     	return $this->belongsToMany('App\Tipo');
     }
+
+    public function lider(){
+    	return $this->belongsTo('App\Lider');
+    }
 }

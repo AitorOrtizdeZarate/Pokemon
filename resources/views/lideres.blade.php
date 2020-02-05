@@ -13,6 +13,11 @@
                 <div>
                 <h3>{{$medalla->lider->lugar}}</h3>
                 </div>
+                <div>
+                  @foreach($medalla->lider->pokemon as $pokemon)
+                    <p>{{$pokemon->nombre}}</p>
+                  @endforeach
+                </div>
                </div>
 
                
