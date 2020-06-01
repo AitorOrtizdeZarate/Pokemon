@@ -25,7 +25,8 @@ class entrenadorController extends Controller
      */
     public function create()
     {
-        //
+        $entrenadores = Trainer::all();
+        return view('CrearTrainer')->with('entrenadores', $entrenadores);
     }
 
     /**
@@ -35,8 +36,19 @@ class entrenadorController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {   
+        $request->validate([
+            'nombre' => 'required', 
+            'apelldio' => 'required',
+            'descripcion' => 'required'
+        ]);
+
+        $entrenador = new Trainer;
+        $entrenador->nombre = $request->input('nombre');
+        $entrenador->apellido = $request->input('apellido');
+        $entrenador->descripcion = $request->input('descripcion');
+        $entrenador->save;
+        return view('welcome');
     }
 
     /**
@@ -83,6 +95,8 @@ class entrenadorController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $entrenador = Trainer::find($id);
+        $entrenador->delete();
+        return view('welcome');
     }
 }
